@@ -6,11 +6,10 @@
 <script type="text/javascript" src="script\smtp.js"></script>
 </head>
 <body>
-This is my test
 <input id="btnSendEmail" type="button" value="sendEmail" style="width:100px;"  onclick = "dealOnClick()" />
 <script type="text/javascript">
 
-function dealOnClick(){
+
 
 Email.send({
     SecureToken : "227b51cb-4c04-4bcf-9b4a-fc8532192f38",
@@ -21,7 +20,7 @@ Email.send({
 }).then(
   message => alert(message)
 );
-}
+
 </script>
 </body>
 </html>
